@@ -464,8 +464,8 @@ class Imagine(nn.Module):
                 save_image(image, str(self.filename))
                 if pbar is not None:
                     pbar.update(1)
-                else:
-                    print(f'image updated at "./{str(self.filename)}"')
+#                else:
+#                    print(f'image updated at "./{str(self.filename)}"')
 
                 if self.save_progress:
                     total_iterations = epoch * self.iterations + i
